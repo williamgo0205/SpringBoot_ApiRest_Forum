@@ -1,2 +1,2 @@
 09/01/2020  => Curso de spring boot - parte 1 - Aula 2 video 6
-23/01/2020  => Curso de spring boot - parte 1 - Aula 4 
+23/01/2020  => Curso de spring boot - parte 1 - Aula 3 

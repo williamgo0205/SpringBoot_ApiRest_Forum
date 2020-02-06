@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "c8ac6553-f04d-47be-8984-4f346dfd872c",
+		"name": "Will - Treinamento Java - ApiRest SpringBoot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/topicos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"titulo\": \"Dúvida de Postman\",\n\t\"mensagem\": \"Teste da Mensagem\",\n\t\"nomeCurso\": \"SpringBoot\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/topicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos"
+					]
+				},
+				"description": "Treinamento Java"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
