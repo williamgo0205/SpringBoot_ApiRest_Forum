@@ -18,16 +18,17 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"titulo\": \"Dúvida de Postman\",\n\t\"mensagem\": \"Teste da Mensagem\",\n\t\"nomeCurso\": \"SpringBoot\"\n}"
+					"raw": "{\n\t\"titulo\": \"Dúvida de Postman\",\n\t\"mensagem\": \"Texto da Mensagem\",\n\t\"nomeCurso\": \"Spring Boot\"\n}"
 				},
 				"url": {
-					"raw": "localhost:8080/topicos",
+					"raw": "localhost:8080/topicos/",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"topicos"
+						"topicos",
+						""
 					]
 				},
 				"description": "Treinamento Java"
