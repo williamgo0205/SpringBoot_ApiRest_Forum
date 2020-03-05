@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "localhost:8080/topicos",
+			"name": "DELETE localhost:8080/topicos",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -14,24 +14,169 @@
 						"key": "Content-Type",
 						"value": "application/json",
 						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US",
+						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"titulo\": \"Dúvida de Postman\",\n\t\"mensagem\": \"Texto da Mensagem\",\n\t\"nomeCurso\": \"Spring Boot\"\n}"
+					"raw": "{\n\t\"titulo\": \"Titulo da Mensagem\",\n\t\"mensagem\": \"Texto da Mensagem\",\n\t\"nomeCurso\": \"Spring Boot\"\n}"
 				},
 				"url": {
-					"raw": "localhost:8080/topicos/",
+					"raw": "localhost:8080/topicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST localhost:8080/topicos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"titulo\": \"Titulo da Mensagem\",\n\t\"mensagem\": \"Texto da Mensagem\",\n\t\"nomeCurso\": \"Spring Boot\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/topicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST localhost:8080/topicos/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"titulo\": \"Titulo da Mensagem\",\n\t\"mensagem\": \"Texto da Mensagem\",\n\t\"nomeCurso\": \"Spring Boot\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/topicos/3",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
 						"topicos",
-						""
+						"3"
 					]
 				},
 				"description": "Treinamento Java"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT localhost:8080/topicos",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"titulo\":\"Atualizado\",\n\t\"mensagem\": \"mensagem Atualizada\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/topicos/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE localhost:8080/topicos",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"titulo\": \"Titulo da Mensagem\",\n\t\"mensagem\": \"Texto da Mensagem\",\n\t\"nomeCurso\": \"Spring Boot\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/topicos/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos",
+						"3"
+					]
+				}
 			},
 			"response": []
 		}
