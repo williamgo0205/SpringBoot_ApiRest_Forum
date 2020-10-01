@@ -6,19 +6,19 @@
 	},
 	"item": [
 		{
-			"name": "DELETE localhost:8080/topicos",
+			"name": "INSERT localhost:8080/topicos",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"type": "text",
+						"value": "application/json"
 					},
 					{
 						"key": "Accept-Language",
-						"value": "en-US",
-						"type": "text"
+						"type": "text",
+						"value": "en-US"
 					}
 				],
 				"body": {
@@ -62,13 +62,31 @@
 					"raw": "{\n\t\"titulo\": \"Titulo da Mensagem\",\n\t\"mensagem\": \"Texto da Mensagem\",\n\t\"nomeCurso\": \"Spring Boot\"\n}"
 				},
 				"url": {
-					"raw": "localhost:8080/topicos",
+					"raw": "localhost:8080/topicos?page=0&size=3&sort=id,DESC&sort=dataCriacao,ASC",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
 						"topicos"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "3"
+						},
+						{
+							"key": "sort",
+							"value": "id,DESC"
+						},
+						{
+							"key": "sort",
+							"value": "dataCriacao,ASC"
+						}
 					]
 				}
 			},
@@ -167,14 +185,14 @@
 					"raw": "{\n\t\"titulo\": \"Titulo da Mensagem\",\n\t\"mensagem\": \"Texto da Mensagem\",\n\t\"nomeCurso\": \"Spring Boot\"\n}"
 				},
 				"url": {
-					"raw": "localhost:8080/topicos/3",
+					"raw": "localhost:8080/topicos/1",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
 						"topicos",
-						"3"
+						"1"
 					]
 				}
 			},
