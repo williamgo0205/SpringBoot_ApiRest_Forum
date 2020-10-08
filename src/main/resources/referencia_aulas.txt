@@ -3,5 +3,9 @@
 27/02/2020  => Curso de spring boot - parte 1 - Aula 5 vídeo 4
 05/03/2020  => Curso de spring boot - parte 1 - Aula 6 vídeo 8
 
-Spring Boot Parte 2: Segurança da API, Cache e Monitoramento
-01/10/2020 => Simplificando Paginação e Ordenação (Aula 1 Paginação e ordenação de recursos - Video 07)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Spring Boot API Rest: Segurança da API, Cache e Monitoramento
+01/10/2020 => Simplificando Paginação e Ordenação (OK)
+08/10/2020 => Melhorando desempenho com Spring Cache (OK)
+08/10/2020 => Proteção com Spring Secury (Aula 4 - Liberando acesso aos endpoints públicos)
