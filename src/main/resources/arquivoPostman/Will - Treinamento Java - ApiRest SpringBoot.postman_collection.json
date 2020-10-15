@@ -23,7 +23,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"titulo\": \"Titulo da Mensagem\",\n\t\"mensagem\": \"Texto da Mensagem\",\n\t\"nomeCurso\": \"Spring Boot\"\n}"
+					"raw": "{\n\t\"titulo\": \"Cache\",\n\t\"mensagem\": \"Invalidando Cache\",\n\t\"nomeCurso\": \"Spring Boot\"\n}"
 				},
 				"url": {
 					"raw": "localhost:8080/topicos",
@@ -193,6 +193,35 @@
 					"path": [
 						"topicos",
 						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Autenticação Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"aluno@email.com\",\r\n    \"senha\":\"123456\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth"
 					]
 				}
 			},
