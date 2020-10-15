@@ -8,4 +8,5 @@
 Spring Boot API Rest: Segurança da API, Cache e Monitoramento
 01/10/2020 => Simplificando Paginação e Ordenação (OK)
 08/10/2020 => Melhorando desempenho com Spring Cache (OK)
-08/10/2020 => Proteção com Spring Secury (Aula 4 - Liberando acesso aos endpoints públicos)
+08/10/2020 => Proteção com Spring Security (OK)
+15/10/2020 => Gerando token com JWT (03 - Configurando autenticação Stateless)
