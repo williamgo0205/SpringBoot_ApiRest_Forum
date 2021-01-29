@@ -1,14 +1,15 @@
 09/01/2020  => Curso de spring boot - parte 1 - Aula 2 video 6
 23/01/2020  => Curso de spring boot - parte 1 - Aula 3 
-27/02/2020  => Curso de spring boot - parte 1 - Aula 5 vÌdeo 4
-05/03/2020  => Curso de spring boot - parte 1 - Aula 6 vÌdeo 8
+27/02/2020  => Curso de spring boot - parte 1 - Aula 5 vÔøΩdeo 4
+05/03/2020  => Curso de spring boot - parte 1 - Aula 6 vÔøΩdeo 8
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-Spring Boot API Rest: SeguranÁa da API, Cache e Monitoramento
-01/10/2020 => Simplificando PaginaÁ„o e OrdenaÁ„o (OK)
+Spring Boot API Rest: SeguranÔøΩa da API, Cache e Monitoramento
+01/10/2020 => Simplificando PaginaÔøΩÔøΩo e OrdenaÔøΩÔøΩo (OK)
 08/10/2020 => Melhorando desempenho com Spring Cache (OK)
-08/10/2020 => ProteÁ„o com Spring Security (OK)
-15/10/2020 => Gerando token com JWT (03 - Configurando autenticaÁ„o Stateless) (OK)
+08/10/2020 => ProteÔøΩÔøΩo com Spring Security (OK)
+15/10/2020 => Gerando token com JWT (03 - Configurando autenticaÔøΩÔøΩo Stateless) (OK)
 12/11/2020 => Autenticacao via JWT (01 - Projeto da aula anterior) (OK)
-10/12/2020 => Monitoramento com Spring Boot Actuator (01 - Projeto da aula anterior)
+10/12/2020 => Monitoramento com Spring Boot Actuator (01 - Projeto da aula anterior) (OK)
+28/01/2021 => Documenta√ß√£o API Swagger (01 - Projeto de aula anterior)

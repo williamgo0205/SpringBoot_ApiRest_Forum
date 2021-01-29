@@ -50,6 +50,7 @@ public class SecurityConfigurations extends WebSecurityConfigurerAdapter{
 		  .antMatchers(HttpMethod.GET, "/topicos").permitAll() 
 		  .antMatchers(HttpMethod.GET, "/topicos/*").permitAll()
 		  .antMatchers(HttpMethod.POST, "/auth").permitAll()
+		  .antMatchers(HttpMethod.GET, "/actuator/**").permitAll()
 		  .anyRequest().authenticated() // Somente user autenticados
 		  //.and().formLogin() // Formulário padrão de Login
 		  .and().csrf().disable() //Autenticação via token
