@@ -36,33 +36,35 @@ public class SecurityConfigurations extends WebSecurityConfigurerAdapter{
 		return super.authenticationManager();
 	}
 	
-	// Configurações de autenticação
+	// ConfiguraÃ§Ãµes de autenticaÃ§Ã£o
 	@Override 
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-		auth.userDetailsService(autenticacaoService).passwordEncoder(new BCryptPasswordEncoder()); // encripitação da senha
+		auth.userDetailsService(autenticacaoService).passwordEncoder(new BCryptPasswordEncoder()); // encripitaï¿½ï¿½o da senha
 	}
 	
-	// Configurações de Autorização (URL's do Projeto)
+	// Configuraï¿½ï¿½es de Autorizaï¿½ï¿½o (URL's do Projeto)
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		// Libera acesso à requisição nesse caso Método GET do /topicos (Lista e detalhes do tópico)
+		// Libera acesso requisiÃ§Ã£o nesse caso Ã©ï¿½todo GET do /topicos (Lista e detalhes do tï¿½pico)
 		http.authorizeRequests()
 		  .antMatchers(HttpMethod.GET, "/topicos").permitAll() 
 		  .antMatchers(HttpMethod.GET, "/topicos/*").permitAll()
 		  .antMatchers(HttpMethod.POST, "/auth").permitAll()
 		  .antMatchers(HttpMethod.GET, "/actuator/**").permitAll()
 		  .anyRequest().authenticated() // Somente user autenticados
-		  //.and().formLogin() // Formulário padrão de Login
-		  .and().csrf().disable() //Autenticação via token
-		  .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS) // Não cria sessão e utiliza token de maneira stateless, mas não tem mais formulário
-		  .and().addFilterBefore(new AutenticacaoViaTokenFilter(tokenService, usuarioRepository), UsernamePasswordAuthenticationFilter.class); // Adicionano filtro para a autenticação do token 
+		  //.and().formLogin() // FormulÃ¡rio padrÃ£o de Login
+		  .and().csrf().disable() //AutenticaÃ§Ã£o via token
+		  .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS) // NÃ£o cria sessÃ£o utiliza token de maneira stateless, mas nï¿½o tem mais formulï¿½rio
+		  .and().addFilterBefore(new AutenticacaoViaTokenFilter(tokenService, usuarioRepository), UsernamePasswordAuthenticationFilter.class); // Adicionano filtro para a autenticaï¿½ï¿½o do token 
 	}
 	
-	// Configurações de Recusros Estáticos (Js, css, imagens)
+	// ConfiguraÃ§Ãµes de Recusros EstÃ¡ticos (Js, css, imagens)
 	@Override
-	public void configure(WebSecurity web) {
-		
-	}
+    public void configure(WebSecurity web) {
+        web.ignoring()
+            .antMatchers("/**.html", "/v2/api-docs", "/webjars/**", "/configuration/**", "/swagger-resources/**");
+    }
+
 	
 	// Gera senha cripitografada
 //	public static void main(String[] args) {
